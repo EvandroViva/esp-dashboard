@@ -4,6 +4,7 @@
 		<table id="table"></table>
 		<script>
 			requestXML()
+			setInterval(function(){ requestXML(); }, 2000);
 			function requestXML() {
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
